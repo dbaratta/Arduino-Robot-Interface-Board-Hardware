@@ -1,0 +1,97 @@
+eeschema (2012-01-19 BZR 3256)-stable  >> Creation date: 11/18/2013 11:11:42 PM
+
+#Cmp ( order = Reference )
+| C1         0.1uF       ;             
+| C2         0.1uF       ;             
+| C3         0.1uF       ;             
+| C4         0.1uF       ;             
+| C5         0.1uF       ;             
+| C6         0.1uF       ;             
+| C7         22pF        ;             
+| C8         22pF        ;             
+| C9         0.33uF      ;             
+| C10        0.1uF       ;             
+| C11        0.1uF       ;             
+| C12        0.33uF      ;             
+| C13        0.1uF       ;             
+| C14        0.1uF       ;             
+| C15        0.1uF       ;             
+| C16        0.1uF       ;             
+| C17        0.1uF       ;             
+| D1         DIODE       ;             
+| D2         LED         ;             
+| D3         LED         ;             
+| F1         500mA       ;             
+| IC1        ATMEGA328-P ; DIL28       
+| J1         USB_2       ;             
+| K1         CONN_3      ;             
+| P1         CONN_2      ;             
+| P2         CONN_2      ;             
+| P3         CONN_2      ;             
+| P4         CONN_8      ;             
+| P5         CONN_4      ;             
+| P6         CONN_8      ;             
+| R1         1k          ;             
+| R2         1k          ;             
+| R3         10k         ;             
+| R4         10k         ;             
+| R5         10k         ;             
+| R6         10k         ;             
+| R7         10k         ;             
+| U1         FT232RL     ;             
+| U2         LM7805      ;             
+| U3         AP7313      ;             
+| U4         ADG3304     ;             
+| U5         SN754410    ;             
+| U6         LM7805      ;             
+| X1         16MHz       ;             
+#End Cmp
+
+#Cmp ( order = Value )
+| 0.1uF        C1        ;             
+| 0.1uF        C2        ;             
+| 0.1uF        C3        ;             
+| 0.1uF        C4        ;             
+| 0.1uF        C5        ;             
+| 0.1uF        C6        ;             
+| 0.1uF        C10       ;             
+| 0.1uF        C11       ;             
+| 0.1uF        C13       ;             
+| 0.1uF        C14       ;             
+| 0.1uF        C15       ;             
+| 0.1uF        C16       ;             
+| 0.1uF        C17       ;             
+| 0.33uF       C9        ;             
+| 0.33uF       C12       ;             
+| 10k          R3        ;             
+| 10k          R4        ;             
+| 10k          R5        ;             
+| 10k          R6        ;             
+| 10k          R7        ;             
+| 16MHz        X1        ;             
+| 1k           R1        ;             
+| 1k           R2        ;             
+| 22pF         C7        ;             
+| 22pF         C8        ;             
+| 500mA        F1        ;             
+| ADG3304      U4        ;             
+| AP7313       U3        ;             
+| ATMEGA328-P  IC1       ; DIL28       
+| CONN_2       P1        ;             
+| CONN_2       P2        ;             
+| CONN_2       P3        ;             
+| CONN_3       K1        ;             
+| CONN_4       P5        ;             
+| CONN_8       P4        ;             
+| CONN_8       P6        ;             
+| DIODE        D1        ;             
+| FT232RL      U1        ;             
+| LED          D2        ;             
+| LED          D3        ;             
+| LM7805       U2        ;             
+| LM7805       U6        ;             
+| SN754410     U5        ;             
+| USB_2        J1        ;             
+#End Cmp
+
+#End List

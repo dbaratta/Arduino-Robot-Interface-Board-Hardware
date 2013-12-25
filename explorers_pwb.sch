@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 11/7/2013 10:24:31 PM
+EESchema Schematic File Version 2  date 12/25/2013 9:05:12 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,13 +31,14 @@ LIBS:contrib
 LIBS:valves
 LIBS:explorers_lib
 LIBS:INTERFACE_BOARD-LIB
-EELAYER 43  0
+LIBS:explorers_pwb-cache
+EELAYER 25  0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "8 nov 2013"
+Date "25 dec 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +46,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 3350 5850
+Wire Wire Line
+	3350 5850 3350 5700
+Wire Wire Line
+	3350 5700 3700 5700
+Wire Wire Line
+	3750 5850 3600 5850
 Wire Wire Line
 	7100 1450 6800 1450
 Wire Wire Line
@@ -202,9 +210,9 @@ Wire Wire Line
 Wire Wire Line
 	3750 3350 3250 3350
 Wire Wire Line
-	4450 2900 4550 2900
+	4200 5700 4300 5700
 Wire Wire Line
-	4550 2900 4550 2800
+	4300 5700 4300 5600
 Wire Wire Line
 	4150 3100 3250 3100
 Connection ~ 1200 5150
@@ -304,14 +312,9 @@ Wire Wire Line
 Wire Wire Line
 	1200 6000 1200 6050
 Wire Wire Line
-	3950 2900 3950 3100
-Connection ~ 3950 3100
-Wire Wire Line
 	3250 3250 3750 3250
 Wire Wire Line
 	3550 5450 3250 5450
-Wire Wire Line
-	3550 5850 3250 5850
 Wire Wire Line
 	3250 6250 4000 6250
 Wire Wire Line
@@ -448,6 +451,17 @@ Wire Wire Line
 	6800 1750 7100 1750
 Wire Wire Line
 	6800 1550 7100 1550
+Wire Wire Line
+	3250 5850 3400 5850
+$Comp
+L CSMALL C18
+U 1 1 52BAE4A6
+P 3500 5850
+F 0 "C18" H 3525 5900 30  0000 L CNN
+F 1 "0.1uF" H 3525 5800 30  0000 L CNN
+	1    3500 5850
+	0    -1   -1   0   
+$EndComp
 Text Label 6800 1950 0    45   ~ 0
 GPIO_6
 Text Label 6800 1850 0    45   ~ 0
@@ -1207,7 +1221,7 @@ $EndComp
 NoConn ~ 3250 6650
 NoConn ~ 3250 6550
 NoConn ~ 3250 6450
-Text GLabel 3550 5850 2    45   Input ~ 0
+Text GLabel 3750 5850 2    45   Input ~ 0
 RESET
 NoConn ~ 3250 6150
 NoConn ~ 3250 6050
@@ -1221,19 +1235,19 @@ TXD0
 $Comp
 L +5V #PWR040
 U 1 1 52799C36
-P 4550 2800
-F 0 "#PWR040" H 4550 2890 20  0001 C CNN
-F 1 "+5V" H 4550 2890 30  0000 C CNN
-	1    4550 2800
+P 4300 5600
+F 0 "#PWR040" H 4300 5690 20  0001 C CNN
+F 1 "+5V" H 4300 5690 30  0000 C CNN
+	1    4300 5600
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R4
 U 1 1 52799C1E
-P 4200 2900
-F 0 "R4" V 4280 2900 50  0000 C CNN
-F 1 "10k" V 4200 2900 50  0000 C CNN
-	1    4200 2900
+P 3950 5700
+F 0 "R4" V 4030 5700 50  0000 C CNN
+F 1 "10k" V 3950 5700 50  0000 C CNN
+	1    3950 5700
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4150 3100 2    45   Input ~ 0
