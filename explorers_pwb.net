@@ -1,7 +1,7 @@
-# EESchema Netlist Version 1.1 created  12/25/2013 9:05:17 AM
+# EESchema Netlist Version 1.1 created  12/31/2013 11:33:23 AM
 (
  ( /52BAE4A6 $noname  C18 0.1uF {Lib=CSMALL}
-  (    1 N-000050 )
+  (    1 N-000048 )
   (    2 RESET )
  )
  ( /527C4D36 $noname  P4 CONN_8 {Lib=CONN_8}
@@ -149,15 +149,15 @@
   (    2 GND )
  )
  ( /52799E3F $noname  F1 500mA {Lib=FUSE}
-  (    1 N-000045 )
+  (    1 N-000044 )
   (    2 /USB_BUS_PWR )
  )
  ( /52799E2D $noname  D1 DIODE {Lib=DIODE}
-  (    1 N-000046 )
-  (    2 N-000045 )
+  (    1 N-000045 )
+  (    2 N-000044 )
  )
  ( /52799D74 $noname  J1 USB_2 {Lib=USB_2}
-  (    1 N-000046 )
+  (    1 N-000045 )
   (    2 /USBD- )
   (    3 /USBD+ )
   (    4 GND )
@@ -176,10 +176,10 @@
  )
  ( /52799CDD $noname  D3 LED {Lib=LED}
   (    1 N-000041 )
-  (    2 N-000025 )
+  (    2 N-000028 )
  )
  ( /52799C1E $noname  R4 10k {Lib=R}
-  (    1 N-000050 )
+  (    1 RESET )
   (    2 +5V )
  )
  ( /52799AAC $noname  C3 0.1uF {Lib=CSMALL}
@@ -196,7 +196,7 @@
  )
  ( /527999E8 $noname  U1 FT232RL {Lib=FT232RL}
   (    1 RXD0 )
-  (    2 N-000050 )
+  (    2 N-000048 )
   (    3 ? )
   (    4 +5V )
   (    5 TXD0 )
@@ -216,23 +216,23 @@
   (   20 +5V )
   (   21 GND )
   (   22 N-000040 )
-  (   23 N-000025 )
+  (   23 N-000028 )
   (   25 GND )
   (   26 GND )
   (   27 ? )
   (   28 ? )
  )
  ( /5279997A $noname  C8 22pF {Lib=CSMALL}
-  (    1 N-000023 )
-  (    2 GND )
- )
- ( /52799973 $noname  C7 22pF {Lib=CSMALL}
   (    1 N-000038 )
   (    2 GND )
  )
+ ( /52799973 $noname  C7 22pF {Lib=CSMALL}
+  (    1 N-000022 )
+  (    2 GND )
+ )
  ( /52799943 $noname  X1 16MHz {Lib=CRYSTAL}
-  (    1 N-000023 )
-  (    2 N-000038 )
+  (    1 N-000038 )
+  (    2 N-000022 )
  )
  ( /527998BF $noname  C4 0.1uF {Lib=CSMALL}
   (    1 +5V )
@@ -255,8 +255,8 @@
   (    6 /M34_EN )
   (    7 +5V )
   (    8 GND )
-  (    9 N-000038 )
-  (   10 N-000023 )
+  (    9 N-000022 )
+  (   10 N-000038 )
   (   11 /2A )
   (   12 /3A )
   (   13 /GPIO_0 )
@@ -450,219 +450,219 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 5 "RXD0" "RXD0"
- U1 1
+Net 4 "RXD0" "RXD0"
  IC1 2
+ U1 1
  U4 2
-Net 6 "TXD0" "TXD0"
+Net 5 "TXD0" "TXD0"
  U1 5
- IC1 3
  U4 3
-Net 9 "GND" "GND"
- C7 2
- C8 2
- U1 21
- U5 13
- C16 1
- C14 2
- C13 2
- IC1 8
- U1 7
- P1 2
- C3 2
- C2 2
- J1 4
- C1 2
- U1 26
- U1 18
- IC1 22
- U1 25
- C4 2
- C5 2
- C6 2
- U2 GND
- C11 2
- C12 2
- U6 GND
- U4 7
- C17 2
- C15 2
- C9 2
- U3 3
- R6 2
- R5 2
- P4 2
- R7 2
- P6 2
- U5 12
- U5 4
- U5 5
- R3 2
- C10 1
- P5 2
-Net 10 "TXD0_33" "TXD0_33"
- U4 12
- P5 4
-Net 11 "+5V" "+5V"
- R4 2
- C2 1
- U1 4
+ IC1 3
+Net 8 "+5V" "+5V"
  C3 1
+ IC1 21
  P6 1
  P4 1
- K1 2
  U1 19
- R1 2
- U3 1
- R2 2
- IC1 20
- IC1 7
- C15 1
  U1 20
- IC1 21
+ C4 1
+ C15 1
+ C5 1
+ U1 4
  C6 1
  C1 1
- U4 1
- U4 8
- C4 1
+ C2 1
+ IC1 7
+ R2 2
  C17 1
- C5 1
-Net 12 "RXD0_33" "RXD0_33"
+ R1 2
+ U4 8
+ U4 1
+ K1 2
+ U3 1
+ R4 2
+ IC1 20
+Net 10 "RXD0_33" "RXD0_33"
  P5 3
  U4 13
-Net 13 "+BATT" "+BATT"
- U2 VI
- C12 1
- U6 VI
- P1 1
- C9 1
+Net 11 "TXD0_33" "TXD0_33"
+ U4 12
+ P5 4
+Net 12 "GND" "GND"
+ C3 2
+ C2 2
+ C1 2
+ P1 2
+ U1 7
+ J1 4
+ C13 2
+ C12 2
+ U6 GND
+ P5 2
+ P6 2
+ P4 2
+ C9 2
+ U1 25
+ U1 26
+ C16 1
+ U1 18
+ U5 4
+ U5 12
+ IC1 22
+ U5 5
+ U5 13
+ C11 2
+ R3 2
+ C4 2
+ C5 2
+ U3 3
+ C14 2
+ C8 2
+ C7 2
+ U2 GND
+ U1 21
+ C10 1
+ IC1 8
+ C15 2
+ C6 2
+ C17 2
+ U4 7
+ R7 2
+ R5 2
+ R6 2
+Net 13 "+3.3V" "+3.3V"
+ C16 2
+ U3 2
+ U4 14
 Net 14 "+5VA" "+5VA"
- C10 2
- U5 8
- U5 16
- C11 1
- U2 VO
  K1 1
  C14 1
+ C10 2
+ U5 16
+ U5 8
+ C11 1
+ U2 VO
 Net 15 "/USB_BUS_PWR" "USB_BUS_PWR"
  F1 2
  K1 3
-Net 16 "+3.3V" "+3.3V"
- U3 2
- U4 14
- C16 2
-Net 17 "/1Y" "1Y"
+Net 16 "/1Y" "1Y"
  U5 3
  P2 1
-Net 18 "/2Y" "2Y"
+Net 17 "/2Y" "2Y"
  U5 6
  P2 2
-Net 19 "/3Y" "3Y"
- P3 1
+Net 18 "/3Y" "3Y"
  U5 11
-Net 20 "/4Y" "4Y"
+ P3 1
+Net 19 "/4Y" "4Y"
  U5 14
  P3 2
-Net 21 "/M34_EN" "M34_EN"
+Net 20 "/M34_EN" "M34_EN"
  IC1 6
  U5 9
-Net 22 "/M12_EN" "M12_EN"
- IC1 4
+Net 21 "/M12_EN" "M12_EN"
  U5 1
-Net 23 "" ""
- IC1 10
- C8 1
- X1 1
-Net 25 "" ""
+ IC1 4
+Net 22 "" ""
+ C7 1
+ X1 2
+ IC1 9
+Net 28 "" ""
  U1 23
  D3 2
-Net 34 "/4A" "4A"
- R7 1
- IC1 15
+Net 32 "/4A" "4A"
  U5 15
-Net 35 "/2A" "2A"
+ IC1 15
+ R7 1
+Net 33 "/2A" "2A"
  R5 1
- IC1 11
  U5 7
-Net 36 "/3A" "3A"
- R3 1
+ IC1 11
+Net 34 "/3A" "3A"
  IC1 12
  U5 10
+ R3 1
+Net 35 "/GPIO_11" "GPIO_11"
+ IC1 14
+ P6 8
 Net 37 "/1A" "1A"
+ U5 2
  IC1 5
  R6 1
- U5 2
 Net 38 "" ""
- X1 2
- C7 1
- IC1 9
+ C8 1
+ X1 1
+ IC1 10
 Net 39 "" ""
  D2 1
  R1 1
 Net 40 "" ""
- U1 22
  D2 2
+ U1 22
 Net 41 "" ""
- R2 1
  D3 1
-Net 42 "RESET" "RESET"
- IC1 1
- C18 2
-Net 45 "" ""
+ R2 1
+Net 44 "" ""
  D1 2
  F1 1
-Net 46 "" ""
- J1 1
+Net 45 "" ""
  D1 1
-Net 47 "/USBD-" "USBD-"
- J1 2
+ J1 1
+Net 46 "/USBD-" "USBD-"
  U1 16
-Net 48 "/USBD+" "USBD+"
- U1 15
+ J1 2
+Net 47 "/USBD+" "USBD+"
  J1 3
-Net 49 "+5VD" "+5VD"
+ U1 15
+Net 48 "" ""
+ U1 2
+ C18 1
+Net 49 "RESET" "RESET"
+ R4 1
+ C18 2
+ IC1 1
+Net 50 "/GPIO_8" "GPIO_8"
+ IC1 18
+ P6 5
+Net 51 "/GPIO_2" "GPIO_2"
+ IC1 27
+ P4 4
+Net 52 "/GPIO_4" "GPIO_4"
+ P4 6
+ IC1 25
+Net 53 "/GPIO_0" "GPIO_0"
+ IC1 13
+ P6 3
+Net 54 "+BATT" "+BATT"
+ C12 1
+ U2 VI
+ C9 1
+ P1 1
+ U6 VI
+Net 55 "/GPIO_5" "GPIO_5"
+ IC1 24
+ P4 7
+Net 56 "/GPIO_3" "GPIO_3"
+ IC1 26
+ P4 5
+Net 57 "/GPIO_1" "GPIO_1"
+ IC1 28
+ P4 3
+Net 58 "/GPIO_10" "GPIO_10"
+ IC1 16
+ P6 7
+Net 59 "/GPIO_9" "GPIO_9"
+ IC1 17
+ P6 6
+Net 60 "/GPIO_7" "GPIO_7"
+ P6 4
+ IC1 19
+Net 61 "+5VD" "+5VD"
  U6 VO
  P5 1
  C13 1
-Net 50 "" ""
- R4 1
- C18 1
- U1 2
-Net 51 "/GPIO_1" "GPIO_1"
- IC1 28
- P4 3
-Net 52 "/GPIO_3" "GPIO_3"
- P4 5
- IC1 26
-Net 53 "/GPIO_5" "GPIO_5"
- IC1 24
- P4 7
-Net 54 "/GPIO_9" "GPIO_9"
- P6 6
- IC1 17
-Net 55 "/GPIO_7" "GPIO_7"
- P6 4
- IC1 19
-Net 56 "/GPIO_6" "GPIO_6"
+Net 62 "/GPIO_6" "GPIO_6"
  P4 8
  IC1 23
-Net 57 "/GPIO_4" "GPIO_4"
- P4 6
- IC1 25
-Net 58 "/GPIO_2" "GPIO_2"
- IC1 27
- P4 4
-Net 59 "/GPIO_11" "GPIO_11"
- IC1 14
- P6 8
-Net 60 "/GPIO_10" "GPIO_10"
- P6 7
- IC1 16
-Net 61 "/GPIO_8" "GPIO_8"
- P6 5
- IC1 18
-Net 62 "/GPIO_0" "GPIO_0"
- P6 3
- IC1 13
 }
 #End
